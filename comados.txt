@@ -1,0 +1,4 @@
+-- Login ECR/docker
+aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 028574230512.dkr.ecr.us-west-2.amazonaws.com
+-- Push imagem to ecr
+docker push 028574230512.dkr.ecr.us-west-2.amazonaws.com/producao:v1
